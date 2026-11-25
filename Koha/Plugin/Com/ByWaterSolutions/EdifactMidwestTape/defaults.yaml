@@ -1,0 +1,80 @@
+---
+
+# Buyer SAN
+buyer_id_code_qualifier: 31B
+buyer_san_use_username: 0
+buyer_san_use_library_ean_split_first_part: 0
+buyer_san_extract_from_library_ean_description: 0
+buyer_san_in_header: 0
+buyer_san_in_nadby: 1
+
+# Library EAN
+branch_ean_in_nadby: 0
+
+# File suffixes
+order_file_suffix: ORD
+invoice_file_suffix: INV
+append_processed_file_suffix: 0
+
+# LIN values
+lin_use_item_field_clear_on_invoice: 0
+lin_use_ean: 1
+lin_use_issn: 1
+lin_use_isbn: 1
+lin_force_first_isbn: 0
+lin_use_invalid_isbn13: 0
+lin_use_invalid_isbn_any: 0
+lin_use_upc: 1
+lin_use_product_id: 1
+
+# PIA values
+pia_use_ean: 0
+pia_use_issn: 0
+pia_use_isbn10: 0
+pia_use_isbn13: 0
+pia_use_upc: 0
+pia_use_product_id: 1
+pia_send_lin: 0
+pia_limit: 25
+
+# GIR values
+gir_disable: 0
+gir_mapping: |
+  LLO: homebranch
+  LST: itype
+  LSQ: ccode
+  LSM: itemcallnumber
+  LAC: biblionumber
+  LCO: itemnumber
+  LVT: itemnotes_nonpublic
+  LFN: budget_code
+  LCD: location
+
+# Order contact and addresses
+send_shipto_address: 0
+shipto_address_qualifier: DP
+send_billto_address: 0
+billto_address_qualifier: IV
+
+# Other ORDER configurations
+send_rff_bfn: 0
+send_rff_bfn_biblionumber: 0
+send_basketname: 0
+split_gir: 0
+
+# Other INVOICE configurations
+set_bookseller_from_order_basket: 1
+ignore_duplicate_reciepts: 1
+ship_budget_from_orderline: 0
+add_tax_to_shipping_costs: 0
+update_pricing_from_vendor_settings: 0
+shipment_charges_moa_8: 1
+shipment_charges_moa_79: 0
+shipment_charges_moa_124: 1
+shipment_charges_moa_131: 0
+shipment_charges_moa_304: 0
+close_invoice_on_receipt: 0
+add_itemnote_on_receipt: 0
+no_update_item_price: update_neither
+skip_nonmatching_san_suffix: 1
+skip_previously_downloaded_files: 1
